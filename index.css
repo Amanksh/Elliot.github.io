@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 * {
   margin: 0;
@@ -12,11 +13,20 @@ body {
 
 footer {
   font-family: 'playfair display ';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 10vh;
 }
 
 footer h2 {
-  background-color: #1d1f22;
+  background-color: #484848;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,12 +45,35 @@ footer h2 {
   margin-left: 50px;
 }
 
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-right: 80px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-family: "Poppins";
+  color: #5e5d5d;
+  padding: 0 14px;
+}
+
+footer ul li a:hover {
+  color: #4d9de0;
+}
+
 main {
   height: auto;
 }
 
 main .main-sec {
-  background-color: #a856ef;
+  background-color: #ff7f11;
   opacity: 0.9;
   height: 85%;
   width: 96%;
@@ -101,12 +134,12 @@ main .main-sec .div-1 h2 span {
 }
 
 main .main-sec .div-1 h2:hover span {
-  color: #2c2f2e;
+  color: #484848;
 }
 
 main .main-sec .div-1 p {
   font-size: 1.5rem;
-  color: #fff;
+  color: #2c2f2e;
 }
 
 main .main-sec .div-1 button {
@@ -120,7 +153,7 @@ main .main-sec .div-1 button {
   margin-right: 120px;
   margin-top: 20px;
   border: none;
-  outline: 2px solid #a856ef;
+  outline: 2px solid #ff7f11;
   outline-offset: -0.2rem;
   color: #fff;
   -webkit-transition: ease-in-out 0.5s;
@@ -138,7 +171,7 @@ main .main-sec .div-2 {
   width: 50%;
   height: 80%;
   background: url(./b8b7faa068cb612f21a7f7268313064b.png) no-repeat center center/cover;
-  outline: 4px solid #a856ef;
+  outline: 4px solid #ff7f11;
   outline-offset: -0.5rem;
 }
 
@@ -220,6 +253,7 @@ main .main-sec .div-2 {
 #skills .container .my-skills .skills-index .fas {
   font-weight: 900;
   font-size: 50px;
+  color: #ff7f11;
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -239,7 +273,7 @@ main .main-sec .div-2 {
 }
 
 #skills .container .my-skills .skills-index .text p {
-  font-family: 'roboto';
+  font-family: "Montserrat";
   font-size: 14px;
   color: #767196;
   font-weight: 400;
@@ -300,7 +334,7 @@ main .main-sec .div-2 {
 
 #skills .container .my-skills .skills-chart .skillbar .skillbar-title span {
   display: block;
-  font-family: 'roboto';
+  font-family: "Poppins";
   color: #ffffff;
   background: rgba(0, 0, 0, 0.1);
   padding: 0 20px;
